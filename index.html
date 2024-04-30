@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link rel="stylesheet" href="src/style.css" />
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  />
+
+  <body>
+    <div class="container">
+      <div class="search">
+        <div class="location">
+            <i class="fa-solid fa-location-pin"></i>
+            <input type="text" class="search-box" placeholder="Enter your location" />
+        </div>
+        <div class="search-icon">
+          <button class="fa-solid fa-magnifying-glass-location" id="search-btn"></button>
+        </div>
+      </div>
+      <div class="not-found">
+        <img src="src/images/404.png">
+        <p style="font-size: 1rem; font-weight: 600; color: #06283D;">Oops! Invalid location :/</p>
+      </div>
+      <div class="weather-box">
+        <img src="" class="weather-condition-image"></img>
+        <p  class="temperature"></p>
+        <p  class="description"></p>
+      </div>
+
+      <div class="weatherInfo">
+        <div class="humid">
+          <i class="fa-solid fa-water"></i>
+          <div class="text flex-center">
+            <span></span>
+            <p style="font-size: 1.1rem;">Humidity</p>
+          </div>
+        </div>
+        <div class="wind none">
+          <i class="fa-solid fa-wind"></i>
+          <div class="text flex-center">
+              <span></span>
+              <p style="font-size: 1.1rem;">Wind Speed</p>
+            </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/7c8801c017.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="src/index.js"></script>
+  </body>
+</html>

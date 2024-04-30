@@ -1,0 +1,148 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #0c517b;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 28px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(5, 5, 5, 0.1);
+    background-color: #fff;
+    width: auto;
+    text-align: left;
+    position: relative;
+    transition: 0.6s ease-out;
+    font-family: monospace;
+}
+
+.container .search {
+    width: 100%;
+    height: min-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-box {
+    color: #06283D;
+    width: 70%;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-left: 10px;
+    padding: 10px 0px 10px 10px;
+    border: none;
+    outline: none;
+    padding-bottom: 12px;
+    font-family: monospace;
+}
+
+.search-box::placeholder {
+    font-size: 20px;
+    font-weight: 500;
+    color: #032133;
+    text-transform: capitalize;
+    font-family: monospace;
+    padding-bottom: 10px;
+}
+
+.search-icon button {
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    color: #06283D;
+    background: #74d3f9;
+    border-radius: 50%;
+    font-size: 22px;
+    transition: 0.4s ease;
+    margin-left: 12px;
+    border: 1px solid #06283D;
+}
+
+.search button:hover {
+    color: #fff;
+    background: #06283D;
+}
+
+.not-found {
+    display: none;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+}
+
+.fa-location-pin {
+    margin-right: 6px;
+    margin-top: 2px;
+    font-size: 1.2rem;
+}
+
+.weather-box {
+    display: none;
+}
+
+.weather-box img {
+    height: 300px;
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+.column-flex{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    align-items: center;
+}
+
+.temperature {
+    color: #06283D;
+    font-size: 4rem;
+    font-weight: 800;
+    margin: 0;
+}
+
+.description {
+    color: #06283D;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.weatherInfo {
+    display: none;
+    bottom: 0;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.weatherInfo .humid,
+.wind {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+}
+
+.text span {
+    font-size: 1.1rem;
+}
